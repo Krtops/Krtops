@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>KR Tops - Home</title>
+    <style>
+        /* Basic CSS styles for the header and product cards */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Logo styles */
+        .logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        /* Image styles */
+        .header-image {
+            max-width: 100%; /* Ensures the image fits within the container */
+        }
+
+        /* Tagline styles */
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Section styles */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 20px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            transition: filter 0.3s ease-in-out;
+        }
+
+        /* Search input styles */
+        .search-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .search-input {
+            padding: 10px;
+            border-radius: 5px;
+            width: 250px;
+            font-size: 1rem;
+        }
+
+        /* Order button styles */
+        .order-button {
+            background-color: orangered;
+            border-radius: 10px;
+            border: solid #fff;
+            border-color: #fff ;
+            color: #fffbfb;
+            border: 2px solid #ddd;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .order-button:hover {
+            background-color:orangered;
+            color: #fff;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <img class="logo" src="7941a788a93e95fb2e8b7df278c0ffad-removebg-preview.png" alt="KR Tops Logo">
+
+        <!-- Main Heading -->
+        <h1>KR Tops</h1>
+
+        <!-- Shopping Tagline -->
+        <p class="tagline">Your One-Stop Shop for Tops!</p>
+
+        <!-- Search Input -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search for products...">
+        </div>
+    </header>
+
+    <!-- Product Cards Container -->
+    <div class="product-container">
+        <!-- Product Card 1 -->
+     <!-- Product Card 1 -->
+<div class="product-card">
+    <h2>Umbrella Top</h2>
+    <img class="product-image" src="Products/P1.jpeg" alt="Product 1 - Red">
+    <div class="product-details">
+        <p>Sizes: M, L, XL, XXL</p>
+        <div class="price-container">
+            
+            <p class="price">Price: Rs.549 <strike>Rs.700</strike></p>
+        </div>
+    </div>
+    <button class="order-button" onclick="placeOrder('Umbrella Top', 'Rs.549')">Order via WhatsApp</button>
+</div>
+
+
+        <!-- Add more product cards as needed -->
+
+        <div class="product-card">
+            <h2>Long Top</h2>
+            <img class="product-image" src="Products/P2.jpeg" alt="Product 1 - Red">
+            <p>Sizes: M, L, XL, XXL</p>
+            <p>Price: Rs.599 <strike>Rs.800</strike></p>
+            <button class="order-button" onclick="placeOrder('Long Top', 'Rs.800')">Order via WhatsApp</button>
+        </div>
+
+        <!-- Add more product cards as needed -->
+        <div class="product-card">
+            <h2>Side Open Top</h2>
+            <img class="product-image" src="Products/P3.jpeg" alt="Product 1 - Red">
+           
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.399 <strike>Rs.600</strike></p>
+            <button class="order-button" onclick="placeOrder('Side Open Top', ' Rs.399')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+
+        <!-- Add more product cards as needed -->
+
+        <div class="product-card">
+            <h2>Long Umbrella Top</h2>
+            <img class="product-image" src="Products/P4.jpeg" alt="Product 1 - Red">
+          
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.799 <strike>Rs.1150</strike></p>
+            <button class="order-button" onclick="placeOrder('Long Umbrella Top', 'Rs.799')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+        <!-- #region -->
+        <div class="product-card">
+            <h2>Side Open Top</h2>
+            <img class="product-image" src="Products/P5.jpeg" alt="Product 1 - Red">
+           
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.449 <strike>Rs.650</strike></p>
+            <button class="order-button" onclick="placeOrder('Side Open Top', 'Rs.449')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+        <!-- #region -->
+        <div class="product-card">
+            <h2>Fish Cut Top</h2>
+            <img class="product-image" src="Products/P6.jpeg" alt="Product 1 - Red">
+        
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.549 <strike>Rs.650</strike></p>
+            <button class="order-button" onclick="placeOrder('Fish Cut Top', 'Rs.549')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+        <!-- #region -->
+        <div class="product-card">
+            <h2>Long Latest Top</h2>
+            <img class="product-image" src="Products/P7.jpeg" alt="Product 1 - Red">
+            
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.599 <strike>Rs.900</strike></p>
+            <button class="order-button" onclick="placeOrder('Long Latest Top', 'Rs.599')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+        <!-- #region -->
+        <div class="product-card">
+            <h2>Side Open Top</h2>
+            <img class="product-image" src="Products/P8.jpeg" alt="Product 1 - Red">
+          
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.499 <strike>Rs.700</strike></p>
+            <button class="order-button" onclick="placeOrder('Side Open Top', '$Rs.499 ')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+        <!-- #region -->
+        <div class="product-card">
+            <h2>Side Open Top</h2>
+            <img class="product-image" src="Products/P9.jpeg" alt="Product 1 - Red">
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.999 <strike>Rs.1200</strike></p>
+            <button class="order-button" onclick="placeOrder('ide Open Top', 'Rs.999')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+        
+        <div class="product-card">
+            <h2>Side Open Long Top</h2>
+            <img class="product-image" src="Products/P10.jpeg" alt="Product 1 - Red">
+            <p>Sizes: M,L,XL,XXL</p>
+            <p>Price: Rs.649 <strike>Rs.880</strike></p>
+            <button class="order-button" onclick="placeOrder('Side Open Long Top', 'Rs.649')">Order via WhatsApp</button>
+            <p class="placeholder-text" style="color: transparent;">Select a color</p>
+            <p class="color-name-placeholder" style="color: #fff;"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Search Functionality
+        const searchInput = document.querySelector(".search-input");
+        const productCards = document.querySelectorAll(".product-card");
+
+        searchInput.addEventListener("input", () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            productCards.forEach(card => {
+                const title = card.querySelector("h2").textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+
+        // Initialize AOS (Animate on Scroll) library
+        AOS.init();
+    </script>
+
+    <script>
+        // Function to place an order via WhatsApp
+        function placeOrder(productName, price) {
+            const message = `I would like to order ${productName}. Price: ${price}`;
+            const contactNumber = ""; // Replace with your WhatsApp contact number
+            const whatsappMessage = encodeURIComponent(message);
+            const whatsappLink = `https://wa.me/${+919663704895}?text=${whatsappMessage}`;
+
+            // Open WhatsApp in a new tab or window
+            window.open(whatsappLink, "_blank");
+        }
+    </script>
+</body>
+</html>
